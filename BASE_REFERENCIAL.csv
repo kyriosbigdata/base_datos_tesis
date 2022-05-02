@@ -1,13 +1,5 @@
-﻿nombre_uno;nombre_dos;apellido_uno;apellido_dos;valor ;cédula;valor_comun
-Sebastian;Alejandro;Núñez;Caza;988590511;172000000;1
-Sofia;Ximena;Núñez;Caza;7679908;172000001;1
-Victor;Hugo;Núñez ;Zambrano;60554464;172000002;1
-Valeria;Paulina;Núñez;Caza;12887234;172000003;1
-;;;;49863285;172000004;1
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
-;;;;;;
+﻿nombre_uno;valor ;valor_comun;cédula
+Sebastian;988590511;1;172000000
+Sofia;7679908;1;172000001
+Victor;60554464;1;172000002
+Valeria;12887234;1;172000003
