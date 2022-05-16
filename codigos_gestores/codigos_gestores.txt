@@ -1,0 +1,17 @@
+// MYSQL
+
+	// INGRESO DESDE CONSOLA
+	mysql -u root -p
+
+	9838k_Holalelo_cabrelo
+
+
+// CREACIÒN DE TABLA DESDE CONSOLA
+CREATE TABLE datos (
+nombre varchar (50), 
+valor int,  
+valor_comun int
+);
+
+// CARGAR LOS VALORES DE LA TABLA
+load data infile
