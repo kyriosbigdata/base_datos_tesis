@@ -1,0 +1,10 @@
+// CREAR UNA COLLECTION
+
+db.createCollection ('datos')
+
+// CONSULTA AGREGACION O SUMA
+
+db.datos.aggregate(
+[]
+
+)
