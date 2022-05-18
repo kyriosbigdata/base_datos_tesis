@@ -2,9 +2,22 @@
 
 db.createCollection ('datos')
 
-// CONSULTA AGREGACION O SUMA
+// CONSULTA AGREGACION O SELECCION (https://www.youtube.com/watch?v=DH0ycfjCJSg)
 
 db.datos.aggregate(
-[]
+[
+
+{$match: {valor:1}}
+
+]
+)
+
+// CONSULTA DE SUMA (https://www.youtube.com/watch?v=HkDNWiSUQCA)
+
+db.datos.aggregate(
+[
+{$group : {}}
+
+]
 
 )
