@@ -8,7 +8,7 @@
 
 // CREACIÒN DE TABLA DESDE CONSOLA
 CREATE TABLE datos (
-nombre varchar (50), 
+nombre varchar (500), 
 valor int,  
 valor_comun int
 );
@@ -34,5 +34,17 @@ select* from nombre_tabla
 // ELIMINAR TODOS LOS REGISTROS DE UNA TABLA
 truncate nombre_tabla;
 
+// BORRAR UNA TABLA
+drop table nombre_tabla;
+
 // SUMA
 SELECT SUM(valor) as total from datos;
+
+// ALTERAR UNA TABLA O MODIFICAR
+alter table nombre_tabla modify nombre_campo varchar (500) ;
+
+//BORRAR UNA BASE DE DATOS
+drop database nombre_base;
+
+//SELECCIONAR VALOR DE LA TABLA
+select * from datos where valores > 350 ;

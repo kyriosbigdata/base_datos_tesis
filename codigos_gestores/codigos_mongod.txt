@@ -14,10 +14,22 @@ db.datos.aggregate(
 
 // CONSULTA DE SUMA (https://www.youtube.com/watch?v=HkDNWiSUQCA)
 
-db.datos.aggregate(
+db.datos_uno.aggregate(
 [
-{$group : {}}
+
+{$match:{valor_comun:1}},
+{$group: {_id:"$valor_comun", total:{$sum:"$valor"}}}
 
 ]
-
 )
+
+//CONSULTA DE UNA VALOR MAYOR QUE
+
+db.nombre_coleccion.find( { valor: { $gt: 350 } } )
+
+
+//BORRAR UNA COLECCION 
+db.nombre_coleccion.drop()
+
+// BORRAR UNA BASE DE DATOS
+db.dropDatabase()
