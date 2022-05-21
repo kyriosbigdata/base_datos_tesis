@@ -15,7 +15,7 @@ valor_comun int
 
 // CARGAR LOS VALORES DE LA TABLA (el backslash es con ALT + 92)
 load data infile 'C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\BASE_REFERENCIAL_EXCEL.csv'
-into table datos
+into table datos_cuatro
 fields terminated by ','
 lines terminated by '\r\n';
 
@@ -38,7 +38,7 @@ truncate nombre_tabla;
 drop table nombre_tabla;
 
 // SUMA
-SELECT SUM(valor) as total from datos;
+SELECT SUM(valor) as total from datos LIMIT 100;
 
 // ALTERAR UNA TABLA O MODIFICAR
 alter table nombre_tabla modify nombre_campo varchar (500) ;
@@ -47,4 +47,4 @@ alter table nombre_tabla modify nombre_campo varchar (500) ;
 drop database nombre_base;
 
 //SELECCIONAR VALOR DE LA TABLA
-select * from datos where valores > 350 ;
+select * from datos where valor > 350 ;
