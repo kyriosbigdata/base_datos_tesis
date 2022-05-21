@@ -38,7 +38,7 @@ truncate nombre_tabla;
 drop table nombre_tabla;
 
 // SUMA
-SELECT SUM(valor) as total from datos LIMIT 100;
+SELECT SUM(valor) as total from datos;
 
 // ALTERAR UNA TABLA O MODIFICAR
 alter table nombre_tabla modify nombre_campo varchar (500) ;

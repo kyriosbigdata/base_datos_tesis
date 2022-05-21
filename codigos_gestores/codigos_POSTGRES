@@ -1,5 +1,6 @@
 // PASSWORD POSTGRESSQL
 9838k_Holalelo_cabrelo
+usuario: postgres
 
 // USAR LA BASE DE DATOS
 
@@ -14,3 +15,9 @@ valor_comun int
 
 // SUBIR UN CSV
  copy public.datos_uno FROM 'C:\Program Files\PostgreSQL\14\bin\BASE_REFERENCIAL_EXCEL.CSV' DELIMITER ',' CSV HEADER;
+
+ //SELECCIONAR VALOR DE LA TABLA
+select * from datos where valor > 350 limit 100 ;
+
+// SUMA
+SELECT SUM(valor) as total from datos;
