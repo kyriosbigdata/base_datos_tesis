@@ -23,9 +23,13 @@ db.datos_uno.aggregate(
 ]
 )
 
+// CONSULTA DE SUMA DOS (https://www.youtube.com/watch?v=HkDNWiSUQCA)
+
+db.datos_uno.aggregate([{$match:{valor_comun:1}},{$group: {_id:"$valor_comun", total:{$sum:"$valor"}}}]).limit(100)
+
 //CONSULTA DE UNA VALOR MAYOR QUE
 
-db.nombre_coleccion.find( { valor: { $gt: 350 } } )
+db.datos_uno.find( { valor: { $gt: 350 } } ).limit(100)
 
 
 //BORRAR UNA COLECCION 

@@ -47,4 +47,4 @@ alter table nombre_tabla modify nombre_campo varchar (500) ;
 drop database nombre_base;
 
 //SELECCIONAR VALOR DE LA TABLA
-select * from datos where valor > 350 ;
+select * from datos where valor > 350 limit 100 ;

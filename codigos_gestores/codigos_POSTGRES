@@ -13,4 +13,4 @@ valor_comun int
 );
 
 // SUBIR UN CSV
- copy public.datos_uno FROM 'C:\Users\Expert Pro\Desktop\base_datos_tesis\BASE_REFERENCIAL_EXCEL.CSV' DELIMITER ',' CSV HEADER;
+ copy public.datos_uno FROM 'C:\Program Files\PostgreSQL\14\bin\BASE_REFERENCIAL_EXCEL.CSV' DELIMITER ',' CSV HEADER;
