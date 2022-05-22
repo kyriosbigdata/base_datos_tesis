@@ -3,4 +3,14 @@ https://cassandra.apache.org/_/download.html
 
 https://cassandra.apache.org/doc/latest/cassandra/getting_started/installing.html (PREREQUISITOS)
 
+https://www.youtube.com/watch?v=hJxlkHafYsQ (Gringo que envia enlaces)
+
+
+// PREREQUISITOS DE CASSANDRA
+https://cassandra.apache.org/doc/latest/cassandra/getting_started/installing.html
+
+
+// DESCARGAR EL JDK 8
+https://adoptopenjdk.net/?variant=openjdk8&jvmVariant=hotspot
+
 
