@@ -1,0 +1,2 @@
+// INTRODUCIR UN CSV EN NEO4J
+https://neo4j.com/videos/importing-csv-data-into-neo4j-aura-free-tier/ 

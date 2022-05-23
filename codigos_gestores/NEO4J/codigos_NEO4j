@@ -1,0 +1,8 @@
+LOAD CSV WITH HEADERS FROM 'file:///C:/neo4j-enterprise-4.4.7/import/BASE_REFERENCIAL_EXCEL.csv' AS ROW RETURN ROW LIMIT 5
+ 
+LOAD CSV WITH HEADERS FROM 'file:///C:/Users/Expert Pro/Desktop/base_datos_tesis/BASE_REFERENCIAL_EXCEL.csv' AS line 
+MERGE (n:MyNode {Name:line.nombre})
+MERGE(m:MyNode{Name:line.valor})
+MERGE (n) :[-TO {dist:line.valor_comun}]-> (m)
+
+C:/neo4j-enterprise-4.4.7/import
